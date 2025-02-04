@@ -54,7 +54,7 @@ body::before {
 }
 
 .gradient-text {
-    font-size: 10vw;
+    font-size: 24vw;
     font-weight: bold;
     background: linear-gradient(45deg, #7fd121, hwb(84 6% 11%)); /* Gradient colors */
     -webkit-background-clip: text; /* Clip background to text */
