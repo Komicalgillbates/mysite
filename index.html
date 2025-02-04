@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wait</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="menu-icon">☰</div>
+        <div>This site</div>
+        <img src="images/graphics1.png" alt="Top Right Graphic" class="top-right-img" id="image-to-fade">
+    </div>
+
+    <div class="gradient-text">
+        Art
+    </div>
+
+    <div class="container">
+
+    </div>
+
+    <script>
+        // Get the elements to apply the fade effect to
+        const fadeTextElement = document.querySelector('.gradient-text');
+        const fadeImageElement = document.getElementById('image-to-fade');
+
+        // Add a scroll event listener to the window
+        window.addEventListener('scroll', function() {
+            // Get the scroll position
+            const scrollY = window.scrollY;
+
+            // Calculate the opacity for the text based on scroll position
+            const maxScroll = 25;
+            const textOpacity = 1 - (scrollY / maxScroll); // Fade out text as we scroll
+            fadeTextElement.style.opacity = textOpacity;
+
+            if (textOpacity < 0) {
+                fadeTextElement.style.opacity = 0;
+            }
+
+            // Calculate the opacity for the image based on scroll position
+            const imageOpacity = 1 - (scrollY / maxScroll); // Fade out image as we scroll
+            fadeImageElement.style.opacity = imageOpacity;
+
+            if (imageOpacity < 0) {
+                fadeImageElement.style.opacity = 0;
+            }
+        });
+    </script>
+</body>
+</html>

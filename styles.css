@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto;   /* Enable vertical scrolling */
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('images/yo1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 150vh; /* This ensures there is enough height to scroll */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(39, 39, 39);
+    opacity: 0.35; /* Adjust opacity as needed */
+    z-index: -1;
+}
+
+.top-bar {
+    background: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%); /* Gradient from top-left to bottom-right */
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.top-right-img {
+    width: 24vw; /* Adjust width based on viewport width */
+    height: auto;
+    position: fixed;
+    top: 135px; /* Adjust to place below the top bar */
+    left: 75%; /* Move the image's left edge to the center of the screen */
+    transform: translateX(-50%);
+    opacity: 1; /* Initial full opacity */
+    transition: opacity 0.2s ease; /* Smooth transition for opacity */
+}
+
+.gradient-text {
+    font-size: 200px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #7fd121, hwb(84 6% 11%)); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip background to text */
+    color: transparent; /* Make text transparent to show the gradient */
+    text-align: center;
+    position: fixed;
+    top: 50%; /* Vertically center the element */
+    left: 27%; /* Horizontally center the element */
+    transform: translate(-50%, -50%);
+    opacity: 1; /* Initial full opacity */
+    transition: opacity 0.2s ease; /* Smooth transition for opacity change */
+}
+
+.container {
+    min-height: 150vh; /* Ensure content is tall enough to require scrolling */
+    padding-top: 100px; /* Padding to start content lower */
+}
