@@ -47,8 +47,8 @@ body::before {
     height: auto;
     position: fixed;
     align: center;
-    top: 50%; /* Adjust to place below the top bar */
-    left: 75%; /* Move the image's left edge to the center of the screen */
+    top: 10vh; /* Adjust to place below the top bar */
+    left: 75vw; /* Move the image's left edge to the center of the screen */
     transform: translateX(-50%, -50%);
     opacity: 1; /* Initial full opacity */
     transition: opacity 0.2s ease; /* Smooth transition for opacity */
