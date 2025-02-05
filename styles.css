@@ -62,8 +62,8 @@ body::before {
     color: transparent; /* Make text transparent to show the gradient */
     text-align: center;
     position: fixed;
-    top: 50%; /* Vertically center the element */
-    left: 27%; /* Horizontally center the element */
+    top: 10vh; /* Vertically center the element */
+    left: 27vw; /* Horizontally center the element */
     transform: translate(-50%, -50%);
     opacity: 1; /* Initial full opacity */
     transition: opacity 0.2s ease; /* Smooth transition for opacity change */
