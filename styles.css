@@ -63,7 +63,7 @@ body::before {
     position: fixed;
     top: 175px; /* Vertically center the element */
     left: 27%; /* Horizontally center the element */
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     opacity: 1; /* Initial full opacity */
     transition: opacity 0.2s ease; /* Smooth transition for opacity change */
 }
