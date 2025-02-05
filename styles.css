@@ -47,7 +47,7 @@ body::before {
     height: auto;
     position: fixed;
     top: 135px; /* Adjust to place below the top bar */
-    left: 75%; /* Move the image's left edge to the center of the screen */
+    left: 65%; /* Move the image's left edge to the center of the screen */
     transform: translateX(-50%);
     opacity: 1; /* Initial full opacity */
     transition: opacity 0.2s ease; /* Smooth transition for opacity */
@@ -61,7 +61,7 @@ body::before {
     color: transparent; /* Make text transparent to show the gradient */
     text-align: center;
     position: fixed;
-    top: 135px; /* Vertically center the element */
+    top: 175px; /* Vertically center the element */
     left: 27%; /* Horizontally center the element */
     transform: translate(-50%);
     opacity: 1; /* Initial full opacity */
